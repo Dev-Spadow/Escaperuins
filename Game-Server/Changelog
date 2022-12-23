@@ -1,0 +1,59 @@
+Mining Changes:
+	~Implemented Black, Dragon Or, Infernal, and Third Age Pickaxes as usable Pickaxes
+	~Fixed most ores from not being minable
+	~Implemented Ores not Depleting server setting. Ores will not deplete
+	~Implemented Woodcut style mining. Ores will not be mined up right away anymore.
+	~Implemented Infernal Pickaxe smelt effect.
+	
+	
+Smithing Changes:
+	~Balanced Experience rates for smelting bars, and smithing armours/weapons around mining experience.
+	
+Cooking Changes:	
+	~Fixed an issue where cookables would be uncookable
+
+Fishing Changes:
+	~Implemented speed modifier on tools(For Dragon, and Crystal Tools)
+	~Removed Fish catchable from Fishing Tools
+	~Implemented Fishing Spot system to be able to Catch Fish again
+	~Fishing Tools now Supports Dragon, and Infernal Harpoon
+	~Implemented Logic for Minnows(catch between 10 and 14)
+	~Added data for all existing catchable fish in the game
+	~Implemented Logic for Barbarian Fishing
+	~Implemented Dynamic Logic for determining which Fishing Tool to uses
+	~Added Data for all Fishing Spots in the game
+	~Implemented chance to obtain CLue in a Bottle
+	~Fixed an issue where fishing pet was rolled every game tick instead of on fish aquired
+	~Implemented Logic controller for Base Fishing Speed and Fastest Fishing speed on each FishingSpot
+	
+Client Changes:
+	~Disabled Teleport interface
+	~Disabled teleport interface packets from firing
+	~Fixed an issue with texture 17(Fishing spot animation texture)
+	~Implemented Runelite Fishing Spot Overlay
+	~Runelite Fishing Spot Overlay will now show all available fish by cycling every 15 seconds.
+	~Implemented Custom NPCS for Fishing Spots (21 Fishing Spots, Each With its own Unique Loot Table(osrs))
+	
+Server Changes:
+	~Updated all Packets to correctly read the amount of data being sent.
+	~Fixed DCing Issues related to packets
+	
+Clue Srolls(Why the fuck am I starting this late in the day):
+	~Implemented RiddleClues Data Container
+	~Implemented ClueLevel system
+	~Implemented Clue Handler System
+		-RiddleClues Dig Logic Added
+			>Implemented Dig Radius: Easy 9x9, Medium 7x7, Hard 5x5, Elite 3x3, Master 1x1(Has to be precise tile) 
+			
+	~Implemented Clue Reward System (Rates to be Disclosed at a future date)
+			>Implemented Logic Controller for Min Rolls, and Max Rolls
+			>Implemented Logic Controller for Determing Standard Loot Table, or Rare Loot Table
+			>Implemented Logic Controller for Determing Sub loot Tables after rolling for Standard, or Rare Tables
+			>Implemented Logic for Adding Rewards to the Player after Clue Rewards Interface Fires.
+			>Implemented Logic for Adding Rewards to Clue Rewards Interface
+		-Easy Clue Opening Logic Added
+			>Easy Clue Tables Added
+		-Medium Clue Opening Logic Added
+			>Medium Clue Tables Added
+		-Hard Clue Opening Logic Added
+			>Hard Clue Tables Added

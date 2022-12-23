@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'application'
+    id("com.github.johnrengelman.shadow") version "7.1.2"
+}
+
+group 'org.aberrant'
+version '1.0.0'
+
+repositories {
+    maven {
+        name = "GitHubPackages"
+        url = uri("https://maven.pkg.github.com/chenneld5/Cache-downloader")
+        credentials {
+            username = 'chenneld5'
+            password = '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'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.2.3'
+}
+
+compileJava {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+application {
+    mainClass.set('com.runescape.GameWindow')
+}

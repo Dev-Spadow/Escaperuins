@@ -1,0 +1,4 @@
+rootProject.name = 'Escaperuins'
+include 'Game-Server'
+include 'Game-Client'
+
